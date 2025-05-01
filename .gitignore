@@ -1,0 +1,7 @@
+certs/
+.terraform*
+connect_device_package 
+iot-client-env
+certs-commands
+terraform.tfstate
+terraform.tfstate.backup
