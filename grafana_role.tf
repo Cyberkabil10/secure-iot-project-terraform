@@ -51,4 +51,8 @@ resource "aws_iam_role_policy" "grafana_timestream_policy" {
   user_type    = "IAM"
   principal_id = aws_iam_role.grafana_timestream_role.arn
 }*/
-
+/*resource "aws_grafana_role_association" "sso_admin_access" {
+  workspace_id = aws_grafana_workspace.secure_iot_grafana.id
+  role         = "ADMIN"
+  group_ids    = ["YOUR_SSO_GROUP_ID"]  # Or use `user_ids` if assigning to individual users
+}*/
