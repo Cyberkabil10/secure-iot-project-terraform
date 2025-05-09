@@ -1,13 +1,14 @@
 terraform {
   required_version = ">= 1.5.0"
 
-  /*backend "remote" {
-    organization = "your-terraform-cloud-organization"
+  cloud { 
+    
+    organization = "pfa-iot-project" 
 
-    workspaces {
-      name = "secure-iot-project"
-    }
-  }*/
+    workspaces { 
+      name = "aws-infra" 
+    } 
+  } 
 
   required_providers {
     aws = {
